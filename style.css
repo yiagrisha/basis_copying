@@ -1,6 +1,13 @@
 @font-face {
   font-family: "Saans";
   font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("Public/Fonts/Saans/Saans/Saans-TRIAL-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Saans";
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("Public/Fonts/Saans/Saans/Saans-TRIAL-Regular.woff2") format("woff2");
@@ -11,6 +18,13 @@
   font-weight: 600;
   font-display: swap;
   src: url("Public/Fonts/Saans/Saans/Saans-TRIAL-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Saans";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("Public/Fonts/Saans/Saans/Saans-TRIAL-Bold.woff2") format("woff2");
 }
 
 * {
@@ -121,6 +135,13 @@ body {
          border-radius: 0.8em;
       }
    }
+
+   h1 {
+      font-weight: 400;
+   }
+   p {
+      font-size: 0.8em;
+   }
 }
 
 
@@ -135,6 +156,7 @@ section {
    align-items: center;
 
    padding: 5em 4em;
+
 
 }
 
@@ -160,7 +182,6 @@ section {
       p {
          text-align: center;
          font-size: 0.7em;
-
       }
    }
 }
@@ -291,5 +312,66 @@ section {
          align-self: center;
       }
    }
+}
+
+#NOW {
+   h1 {
+      font-size: 25em;
+   }
+   p {
+      text-align: center;
+
+      max-width: 35em;
+      margin-bottom: 2em;
+   }
+}
+
+#early_stage {
+   position: relative;
+   height: 230vh;
+
+   .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      .mask {
+         width: 100%;
+         border-radius: 1em;
+         overflow: hidden;
+
+         video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+
+   .content {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      padding: 0 15em;
+
+      h1 {
+         text-align: center;
+
+         b {
+            font-weight: 900;
+         }
+      }
+
+      p {
+         text-align: center;
+      }
+   }
+}
+
+#goals_into_results {
+   height: 100vh;
 }
 
